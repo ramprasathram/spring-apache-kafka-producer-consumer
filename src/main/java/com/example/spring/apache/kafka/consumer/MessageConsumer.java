@@ -9,7 +9,7 @@ public class MessageConsumer {
 	@KafkaListener(topics = "${topic.name}", groupId = "${spring.kafka.consumer.group-id2},${spring.kafka.consumer.group-id}")
 	public void consumeMessage(String msg) {
 
-
+		System.out.println("Added");
 		System.out.println("Message received: " + msg);
 	}
 
